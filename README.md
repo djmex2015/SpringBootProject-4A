@@ -9,15 +9,18 @@ URL: http: // localhost: 8080 / signup
 PAYLOAD: {"email": "marcos9@gmail.com", "name": "marcos9", "encryptedPassword": "marcos54321"}
 Returns the created client.
 
+
 2nd Requirement
 Login
 URL: http: // localhost: 8080 / login
 PAYLOAD: {"email": "marcos9@gmail.com", "password": "marcos54321"}
 Returns the logged in user.
 
+
 3rd Requirement
 Logout
 URL: http: // localhost: 8080 / logout
+
 
 4th Requirement
 List of films available
@@ -26,11 +29,14 @@ Entry is true or false (Variable Path)
 Returns a list of films.
 
 
+
 5th Requirement
 Location of a film
 URL: http: // localhost: 8080 / film / {id}
 Input is the id of the film (Variable Path)
   Return the film.
+
+
 
 6th Requirement
 Search for Filme by title
@@ -38,12 +44,16 @@ URL: http: // localhost: 8080 / film / title / {title}
 Entry is the title (exact, case sensitive) of the film (Path Variable)
 Returns a list of films.
 
+
+
 7th Requirement
 Return of a film
 Input is the id of the film (Variable Path)
 Input is the id of the film (Variable Path)
 URL: http: // localhost: 8080 / film / updFilm / {idFilm} (return -> true / delivery-> false)
 Returns the updated film.
+
+
 
 ASPECTS
 1) Concurrency is handled by @beans since these are by default singletons and are not used as data holders, therefore the operations they perform will handle the concurrency of data (searched, updated movies, etc.) without worrying about it .
