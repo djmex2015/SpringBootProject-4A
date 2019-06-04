@@ -57,8 +57,8 @@ Returns the updated film.
 
 ASPECTS
 1) Concurrency is handled by @beans since these are by default singletons and are not used as data holders, therefore the operations they perform will handle the concurrency of data (searched, updated movies, etc.) without worrying about it .
-2) The scripts are executed in a ComandLineRunner (com.mex.SpringBootProject.initializer), which contains the context of the services for including and saving the encrypted data (password). In case you want scripts you could do them without problems.
+2) The scripts are executed in a ComandLineRunner (com.mex.SpringBootProject.initializer), which contains the context of the services for including and saving the encrypted data (password).
 
 TECHNOLOGIES
-We used Spring Boot 2.1.5 mostly java-config, and for the security part spring-boot-starter-security with JWT for authentication.
-For what is the data structure we use MySql (configured in application.xml, you can also modify it there) the options of handling tables by JPA (CREATE (current), UPDATE, CREATE-DROP, etc ..)
+i hav used Spring Boot 2.1.5 mostly java-config, and for the security part spring-boot-starter-security with JWT for authentication.
+For what is the data structure i used MySql (configured in application.xml, you can also modify it there) the options of handling tables by JPA (CREATE (current), UPDATE, CREATE-DROP, etc ..)
